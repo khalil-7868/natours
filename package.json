@@ -1,0 +1,47 @@
+{
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon server.js",
+        "start:prod": "NODE_ENV=production nodemon server.js",
+        "debug": "ndb server.js",
+        "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+        "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.12.1",
+        "@stripe/stripe-js": "^7.8.0",
+        "axios": "^1.11.0",
+        "bcryptjs": "^3.0.2",
+        "compression": "^1.8.1",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^4.21.2",
+        "express-mongo-sanitize": "^2.2.0",
+        "express-rate-limit": "^8.0.1",
+        "helmet": "^8.1.0",
+        "hpp": "^0.2.3",
+        "html-to-text": "^9.0.5",
+        "jsonwebtoken": "^9.0.2",
+        "mongodb": "^6.16.0",
+        "mongoose": "8.16.4",
+        "morgan": "^1.10.0",
+        "multer": "^2.0.2",
+        "nodemailer": "^7.0.5",
+        "pug": "^3.0.3",
+        "sharp": "^0.34.3",
+        "slugify": "^1.6.6",
+        "stripe": "^18.4.0",
+        "validator": "^13.15.15",
+        "xss-clean": "^0.1.4"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.5"
+    }
+}
